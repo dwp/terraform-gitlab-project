@@ -65,6 +65,7 @@ create-release:
   <<: *docker-executor
   image: node:lts-alpine@sha256:51e341881c2b77e52778921c685e711a186a71b8c6f62ff2edfc6b6950225a2f
   script:
+    - apk add --update --no-cache git
     - |
       npm i --no-lock @semantic-release/changelog@5.0.1 \
                 @semantic-release/commit-analyzer@8.0.1 \
