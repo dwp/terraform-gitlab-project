@@ -65,6 +65,7 @@ create-release:
   <<: *docker-executor
   image: node:lts-alpine@sha256:51e341881c2b77e52778921c685e711a186a71b8c6f62ff2edfc6b6950225a2f
   script:
+    - sed -i "s|https*://dl-cdn.alpinelinux.org|https://nexus.nonprod.dwpcloud.uk/repository|" /etc/apk/repositories
     - apk add --update --no-cache git
     - |
       npm i --no-lock @semantic-release/changelog@5.0.1 \
