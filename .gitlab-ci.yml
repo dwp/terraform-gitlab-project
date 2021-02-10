@@ -22,6 +22,7 @@ image: hashicorp/terraform:0.14.5
 stages:
   - compliance
   - security
+  - publish
 
 tflint:
   stage: compliance
@@ -30,7 +31,7 @@ tflint:
     - terraform fmt -recursive -check
   <<: *only-run-on-branches
 
-kics:
+static-analysis:
   stage: security
   <<: *docker-executor
   image: alpine:latest@sha256:08d6ca16c60fe7490c03d10dc339d9fd8ea67c6466dea8d558526b1330a85930
@@ -58,3 +59,19 @@ kics:
       - kics-results.json
   needs: []
   <<: *only-run-on-branches
+
+create-release:
+  stage: publish
+  <<: *docker-executor
+  image: node:lts-alpine@sha256:51e341881c2b77e52778921c685e711a186a71b8c6f62ff2edfc6b6950225a2f
+  script:
+    - |
+      npm i --no-lock @semantic-release/changelog@5.0.1 \
+                @semantic-release/commit-analyzer@8.0.1 \
+                @semantic-release/git@9.0.0 \
+                @semantic-release/gitlab@6.0.9 \
+                @semantic-release/release-notes-generator@9.0.1 \
+                conventional-changelog-conventionalcommits@4.5.0 \
+                semantic-release@17.3.8
+    - semantic-release
+  <<: *only-run-on-default-branch
