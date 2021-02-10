@@ -73,5 +73,5 @@ create-release:
                 @semantic-release/release-notes-generator@9.0.1 \
                 conventional-changelog-conventionalcommits@4.5.0 \
                 semantic-release@17.3.8
-    - semantic-release
+    - ./node_modules/.bin/semantic-release
   <<: *only-run-on-default-branch
