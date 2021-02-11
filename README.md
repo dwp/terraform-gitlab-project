@@ -20,6 +20,34 @@ See the [`versions.tf`](versions.tf) file for required Terraform and provider ve
 | ------- | --------------------------- |
 | project | The GitLab project resource |
 
+## Naming your projects
+
+As per the engineering practice guidance:
+
+> Projects must be named in lowercase, using a-z, 0-9, and - symbols only. The name should reflect the contents and must not have any generic or repetitive prefixes or suffixes, or abbreviations, acronyms, or initialisms.
+
+For example, the following would not be an acceptable project name:
+
+```terraform
+module "project" {
+  source = "git::git@gitlab.com:dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project.git"
+
+  group_id = 123
+  name     = "apply for pension credit citizen UI"
+}
+```
+
+Instead, it should be something like this:
+
+```terraform
+module "project" {
+  source = "git::git@gitlab.com:dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project.git"
+
+  group_id = 123
+  name     = "citizen-frontend"
+}
+```
+
 ## Using this module in other projects
 
 While this module was written for the Apply for Pension Credit project, it can be lifted out and used elsewhere very easily. The only reference to Apply for Pension Credit specifically is the branch name regex in [`project.tf`](project.tf). This can be removed or altered as needed.
