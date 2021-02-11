@@ -11,9 +11,9 @@
     - when: never
 
 
-.only-run-on-default-branch: &only-run-on-default-branch
+.only-run-via-manual-action-on-default-branch: &only-run-via-manual-action-on-default-branch
   rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "web"
       when: always
     - when: never
 
@@ -75,5 +75,10 @@ create-release:
                 @semantic-release/release-notes-generator@9.0.1 \
                 conventional-changelog-conventionalcommits@4.5.0 \
                 semantic-release@17.3.8
-    - ./node_modules/.bin/semantic-release
-  <<: *only-run-on-default-branch
+    - |
+      export GIT_AUTHOR_NAME=$GITLAB_USER_NAME
+      export GIT_AUTHOR_EMAIL=$GITLAB_USER_EMAIL
+      export GIT_COMMITTER_NAME=$GITLAB_USER_NAME
+      export GIT_COMMITTER_EMAIL=$GITLAB_USER_EMAIL
+    - GITLAB_TOKEN=$$RELEASE_TOKEN ./node_modules/.bin/semantic-release
+  <<: *only-run-via-manual-action-on-default-branch
