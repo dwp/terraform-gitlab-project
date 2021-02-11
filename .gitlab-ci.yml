@@ -80,5 +80,5 @@ create-release:
       export GIT_AUTHOR_EMAIL=$GITLAB_USER_EMAIL
       export GIT_COMMITTER_NAME=$GITLAB_USER_NAME
       export GIT_COMMITTER_EMAIL=$GITLAB_USER_EMAIL
-    - GITLAB_TOKEN=$$RELEASE_TOKEN ./node_modules/.bin/semantic-release
+    - GITLAB_TOKEN=$RELEASE_TOKEN ./node_modules/.bin/semantic-release
   <<: *only-run-via-manual-action-on-default-branch
