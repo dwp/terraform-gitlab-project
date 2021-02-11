@@ -1,6 +1,6 @@
 resource "gitlab_branch_protection" "this" {
   project                      = gitlab_project.this.id
-  branch                       = "main"
+  branch                       = var.default_branch
   push_access_level            = "no one"
   merge_access_level           = "developer"
   code_owner_approval_required = true
