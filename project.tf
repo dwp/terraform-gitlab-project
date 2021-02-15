@@ -1,7 +1,7 @@
 resource "gitlab_project" "this" {
   name                   = var.name
   namespace_id           = var.group_id
-  visibility_level       = "internal"
+  visibility_level       = "private"
   default_branch         = var.default_branch
   request_access_enabled = true
 
