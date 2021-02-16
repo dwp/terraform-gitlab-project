@@ -1,3 +1,10 @@
+## [1.1.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.0.0...1.1.0) (2021-02-16)
+
+
+### Features
+
+* add ability to set project membership ([e85a8fb](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/e85a8fbb9198e77f31307c9c7611e2ba61b5daf6))
+
 ## 1.0.0 (2021-02-11)
 
 
