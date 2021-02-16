@@ -1,3 +1,10 @@
+## [1.2.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.1.0...1.2.0) (2021-02-16)
+
+
+### Features
+
+* add project name format validation ([02bedb7](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/02bedb74c5a073243fc8493b542aaee21ec55217))
+
 ## [1.1.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.0.0...1.1.0) (2021-02-16)
 
 
