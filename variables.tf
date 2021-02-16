@@ -21,4 +21,9 @@ variable "members" {
 variable "name" {
   type        = string
   description = "The name of the project to be created"
+
+  validation {
+    condition     = can(regex("^[a-z0-9-]*$", var.name))
+    error_message = "Projects must be named in lowercase, using a-z, 0-9, and - (hyphen) symbols only."
+  }
 }
