@@ -19,6 +19,12 @@
 
 image: hashicorp/terraform:0.14.5
 
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE =~ /push|web/'
+      when: always
+    - when: never
+
 stages:
   - compliance
   - security
