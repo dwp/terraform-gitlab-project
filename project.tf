@@ -21,6 +21,6 @@ resource "gitlab_project" "this" {
     deny_delete_tag        = true
     member_check           = true
     prevent_secrets        = true
-    branch_name_regex      = "^(afpc[0-9]+(-epic)*|chore/[a-z0-9-]+)$"
+    branch_name_regex      = "^(afpc[0-9]+(-epic)*|(chore|refactor)/[a-z0-9-]+)$"
   }
 }
