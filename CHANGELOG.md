@@ -1,3 +1,12 @@
+## [1.3.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.2.0...1.3.0) (2021-02-26)
+
+
+### Features
+
+* amend branch regex for branches created by renovate-bot ([6b4354d](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/6b4354d4305fdeca9d1eebb0d3f4cb972147b50d)), closes [#4](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/issues/4)
+* **ci:** only run pipeline via web or on push ([18b4d7a](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/18b4d7ab0d132d5692abbb1ef54b01d2d04e214e))
+* use push options to skip CI when creating a release ([e84d86b](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/e84d86b16bf8afa59d7a303db28b6fc9f712fc60))
+
 ## [1.2.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.1.0...1.2.0) (2021-02-16)
 
 
