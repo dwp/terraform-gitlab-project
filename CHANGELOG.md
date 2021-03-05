@@ -1,3 +1,11 @@
+## [1.4.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.3.0...1.4.0) (2021-03-05)
+
+
+### Features
+
+* add default empty map for members variable ([219c180](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/219c18058efebe446b8e09ea57cc1261db0120c6))
+* upgrade gitlab provider to version 3.5.0 ([d9aa87f](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/d9aa87fdc32219687e06b33076abe9133983f21c))
+
 ## [1.3.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.2.0...1.3.0) (2021-02-26)
 
 
