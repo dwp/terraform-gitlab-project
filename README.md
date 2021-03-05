@@ -12,7 +12,7 @@ See the [`versions.tf`](versions.tf) file for required Terraform and provider ve
 | --------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------- | :------: |
 | default\_branch | The default branch the repository will use. Defaults to main                                                        | `string`                                                                                                    | `"main"` |    no    |
 | group\_id       | The ID of the GitLab group that repositories will be created in                                                     | `number`                                                                                                    | n/a      |   yes    |
-| members         | List of users to add to the project with the given role. Valid values are guest, reporter, developer and maintainer | <pre>map(object({<br>    id       = number<br>    role     = string<br>    username = string<br>  }))</pre> | n/a      |   yes    |
+| members         | List of users to add to the project with the given role. Valid values are guest, reporter, developer and maintainer | <pre>map(object({<br>    id       = number<br>    role     = string<br>    username = string<br>  }))</pre> | `{}`     |   yes    |
 | name            | The name of the project to be created                                                                               | `string`                                                                                                    | n/a      |   yes    |
 
 ## Outputs
