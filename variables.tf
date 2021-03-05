@@ -16,6 +16,7 @@ variable "members" {
     username = string
   }))
   description = "List of users to add to the project with the given role. Valid values are guest, reporter, developer and maintainer"
+  default     = {}
 }
 
 variable "name" {
