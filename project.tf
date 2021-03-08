@@ -16,6 +16,8 @@ resource "gitlab_project" "this" {
   only_allow_merge_if_all_discussions_are_resolved = true
   remove_source_branch_after_merge                 = true
 
+  pages_access_level = "private"
+
   push_rules {
     commit_committer_check = true
     deny_delete_tag        = true
