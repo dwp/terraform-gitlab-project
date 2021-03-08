@@ -1,3 +1,9 @@
+variable "branch_name_regex" {
+  type        = string
+  description = "Regular expression to enforce on branch names"
+  default     = ""
+}
+
 variable "default_branch" {
   type        = string
   description = "The default branch the repository will use. Defaults to main"
