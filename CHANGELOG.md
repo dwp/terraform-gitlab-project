@@ -1,3 +1,17 @@
+## [2.0.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.4.0...2.0.0) (2021-03-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* the previous value for `branch_name_regex` is no longer
+automatically set, so consumers using this value will need to pass it
+into the module via the input variable
+
+### Features
+
+* add branch_name_regex input variable ([0f57a43](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/0f57a4372ed3f71ec45cd789b93f444b451d2fe9)), closes [#6](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/issues/6)
+* explicitly set pages access level to private ([a298f98](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/commit/a298f982fe408016712ecf6555a53c26c44f9849)), closes [#5](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/issues/5)
+
 ## [1.4.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.3.0...1.4.0) (2021-03-05)
 
 
