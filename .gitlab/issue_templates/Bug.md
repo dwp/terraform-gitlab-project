@@ -9,3 +9,5 @@
 **Relevant logs and/or screenshots**
 
 **Possible fixes**
+
+/label ~bug
