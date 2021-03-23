@@ -6,21 +6,6 @@ This module creates a GitLab project with a default set of permissions.
 
 See the [`versions.tf`](versions.tf) file for required Terraform and provider versions.
 
-## Inputs
-
-| Name            | Description                                                                                                         | Type                                                                                                        | Default  | Required |
-| --------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------- | :------: |
-| default\_branch | The default branch the repository will use. Defaults to main                                                        | `string`                                                                                                    | `"main"` |    no    |
-| group\_id       | The ID of the GitLab group that repositories will be created in                                                     | `number`                                                                                                    | n/a      |   yes    |
-| members         | List of users to add to the project with the given role. Valid values are guest, reporter, developer and maintainer | <pre>map(object({<br>    id       = number<br>    role     = string<br>    username = string<br>  }))</pre> | `{}`     |   yes    |
-| name            | The name of the project to be created                                                                               | `string`                                                                                                    | n/a      |   yes    |
-
-## Outputs
-
-| Name    | Description                 |
-| ------- | --------------------------- |
-| project | The GitLab project resource |
-
 ## Naming your projects
 
 As per the engineering practice guidance:
