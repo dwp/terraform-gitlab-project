@@ -1,9 +1,3 @@
-variable "default_branch" {
-  type        = string
-  description = "The default branch the repository will use. Defaults to main"
-  default     = "main"
-}
-
 variable "group_id" {
   type        = number
   description = "The ID of the GitLab group that repositories will be created in"
@@ -23,6 +17,18 @@ variable "approvals_before_merge" {
   type        = string
   description = "(Optional) Number of merge request approvals required for merging. Default is 0."
   default     = 1
+}
+
+variable "default_branch" {
+  type        = string
+  description = "(Optional) The default branch the repository will use. Defaults to main."
+  default     = "main"
+}
+
+variable "description" {
+  type        = string
+  description = "(Optional) A description of the project."
+  default     = ""
 }
 
 variable "lfs_enabled" {

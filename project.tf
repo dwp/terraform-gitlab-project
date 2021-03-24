@@ -1,6 +1,7 @@
 resource "gitlab_project" "this" {
   name                   = var.name
   namespace_id           = var.group_id
+  description            = var.description
   visibility_level       = var.visibility_level
   default_branch         = var.default_branch
   request_access_enabled = var.request_access_enabled
@@ -24,5 +25,9 @@ resource "gitlab_project" "this" {
     member_check           = var.member_check
     prevent_secrets        = var.prevent_secrets
     branch_name_regex      = var.branch_name_regex
+  }
+
+  lifecycle {
+    prevent_destroy = true
   }
 }
