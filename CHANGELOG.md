@@ -1,3 +1,11 @@
+## [2.1.0](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/compare/2.0.0...2.1.0) (2021-03-26)
+
+
+### Features
+
+* allow setting project description ([00780ad](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/commit/00780adc3fcbebd80097a3dbfb18e31986c46c86))
+* move all config to variables ([0ccf83b](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/commit/0ccf83b4409a6d89aa270f6b5aca00c243aba51c))
+
 ## [2.0.0](https://gitlab.com/dwp/apply-for-pension-credit/gitlab-common-terraform-modules/project/compare/1.4.0...2.0.0) (2021-03-08)
 
 
