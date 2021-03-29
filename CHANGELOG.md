@@ -1,3 +1,10 @@
+## [2.2.0](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/compare/2.1.0...2.2.0) (2021-03-29)
+
+
+### Features
+
+* add CONTRIBUTING.md and githooks submodule ([99024c6](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/commit/99024c651438eb3f68b6e2a929f83461119d909d))
+
 ## [2.1.0](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/compare/2.0.0...2.1.0) (2021-03-26)
 
 
