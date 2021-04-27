@@ -31,6 +31,12 @@ variable "description" {
   default     = ""
 }
 
+variable "initialize_with_readme" {
+  type        = bool
+  description = "(Optional) Create main branch with first commit containing a README.md file."
+  default     = false
+}
+
 variable "lfs_enabled" {
   type        = bool
   description = "(Optional) Enable LFS for the project."

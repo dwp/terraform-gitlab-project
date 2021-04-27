@@ -4,6 +4,7 @@ resource "gitlab_project" "this" {
   description            = var.description
   visibility_level       = var.visibility_level
   default_branch         = var.default_branch
+  initialize_with_readme = var.initialize_with_readme
   request_access_enabled = var.request_access_enabled
 
   lfs_enabled      = var.lfs_enabled
