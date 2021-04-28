@@ -1,3 +1,10 @@
+## [2.3.0](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/compare/2.2.0...2.3.0) (2021-04-28)
+
+
+### Features
+
+* support initialize_with_readme and default to false ([e35cec9](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/commit/e35cec9e6fe834e4fefb9137603b91a0e2c92a84))
+
 ## [2.2.0](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/compare/2.1.0...2.2.0) (2021-03-29)
 
 
