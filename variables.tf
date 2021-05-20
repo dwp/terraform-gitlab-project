@@ -169,6 +169,20 @@ variable "push_access_level" {
 }
 
 
+## Tag protection
+
+variable "tag_create_access_level" {
+  type        = string
+  description = "(Optional) One of five levels of access to the project e.g. `no one`, `developer`, `maintainer`"
+  default     = "maintainer"
+
+  validation {
+    condition     = contains(["no one", "guest", "reporter", "developer", "maintainer", "owner"], var.tag_create_access_level)
+    error_message = "Must be one of `no one`, `guest`, `reporter`, `developer`, `maintainer`, `owner`."
+  }
+}
+
+
 ## Merge Request Approvals
 
 variable "disable_overriding_approvers_per_merge_request" {
