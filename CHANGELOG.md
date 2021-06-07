@@ -1,3 +1,10 @@
+## [2.4.0](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/compare/2.3.0...2.4.0) (2021-06-07)
+
+
+### Features
+
+* add tag protection access level setting ([a4ee358](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/commit/a4ee358a57104d717bde1cbbc83960ec29f4f6e1)), closes [#7](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/issues/7)
+
 ## [2.3.0](https://gitlab.com/dwp/engineering/gitlab-terraform-modules/project/compare/2.2.0...2.3.0) (2021-04-28)
 
 
